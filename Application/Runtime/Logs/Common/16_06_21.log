@@ -1,0 +1,66 @@
+[ 2016-06-21T00:58:21+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T00:59:20+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T00:59:27+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T01:00:27+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T01:00:29+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T01:00:31+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T01:00:40+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T01:00:41+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T01:00:52+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T01:00:58+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Index
+
+[ 2016-06-21T01:01:59+08:00 ] ::1 /project/index.php/index.php?m=Home&c=Cat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+ERR: 无法加载模块:Index
+

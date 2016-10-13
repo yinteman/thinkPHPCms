@@ -1,0 +1,92 @@
+<include file="Index/header"/>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-9">
+        <div class="banner">
+        <div class="banner-left">
+          <div id="myCarousel" class="carousel slide">
+
+  <ol class="carousel-indicators">
+   <for start="0" end="$result['total']"> 
+    <li data-target="#myCarousel" data-slide-to="{$i}" 
+    <if condition="$i eq 0">class="active"</if>></li>
+   </for>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+  <foreach name="result['topPic']" item="val" key="k">
+    <div <if condition="$k eq 0"> class="active item"<else />class=" item"</if> > 
+    <div class="banner-info"><span>阅读数</span><i class="news_count node-{$val['news_id']}" id="{$val['news_id']}"></i></div>
+    <a href="Index.php/Home/c=Detail&id={$val['id']}"><img src="{$val['thumb']}" alt=""  width="670" height="360"></a></div>
+    </foreach>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+       </div>
+          <div class="banner-right">
+            <ul>
+            <foreach name="result['topSmail']" item="pic">
+              <li >
+               <a href="/project/index.php?m=Home&c=Detail&id={$pic['id']}"> <img src="{$pic.thumb}" alt="" width="150" height="113"><a>
+              </li>
+              </foreach>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="news-list">
+        <foreach name="result['listNes']" item="new">
+          <dl>
+            <dt>{$new.title}</dt>
+            <dd class="news-img" >
+              <a href="/project/index.php?m=Home&c=Detail&id={$new['news_id']}" target="_blank"><img src="{$new.thumb}" alt="" width="170"></a>
+            </dd>
+            <dd class="news-intro">
+              {$new.small_title}
+            </dd>
+            <dd class="news-info">
+              {$new.username}<span>{$new.create_time|date="y-m-h",###}</span> 阅读
+              <i 
+              class="news_count node-{$new['news_id']}" id="{$new['news_id']}"></i>
+            </dd>
+          </dl>
+         </foreach>
+            
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-3">
+        <div class="right-title">
+          <h3>文章排行</h3>
+          <span>TOP ARTICLES</span>
+        </div>
+        <div class="right-content">
+          <ul>
+          <volist name="result['ranknews']" id="new" key="k">
+            <li class="num{$k}  curr">
+              <a href="/project/index.php?m=Home&c=Detail&id={$new['news_id']}" target="_blank">{$new.title}</a>
+              <if condition="$k eq 0">
+              <div class="intro">
+                {$news.small_title}
+              </div>
+              </if>
+            </li>
+            
+            </volist>
+          </ul>
+        </div>
+        <volist name="result['adList']" id="ads" key="k">
+        <div class="right-hot">
+          <a href="/project/index.php?m=Home&c=Detail&id={$ads['news_id']}"><img src="{$ad.thumb}" alt=""></a>
+        </div>
+        </volist>
+        
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+<script type="text/javascript" src="__PUBLIC__/js/count.js"></script>
+</html>

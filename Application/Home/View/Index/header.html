@@ -1,0 +1,40 @@
+<?php
+
+$cates=D("Menu")->getBarName();
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sing资讯</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="__PUBLIC__/css/home/main.css" type="text/css" />
+   <link rel="stylesheet" href="__PUBLIC__/css/party/bootstrap-switch.css" />
+   
+    <script src="__PUBLIC__/js/jquery.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/dialog/layer.js"></script>
+    <script src="__PUBLIC__/js/dialog.js"></script>
+   <script type="text/javascript" src="__PUBLIC__/laypage-v1.3/laypage/laypage.js"></script>
+
+</head>
+<body>
+<header id="header">
+  <div class="navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="">
+          <img src="__PUBLIC__/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="Index.php?m=Home&c=Cat" <if condition="$cid eq ''">class="curr"</if>>首页</a></li>
+        <foreach name="cates" item="cate">
+        <li><a href="Index.php?m=Home&c=Cat&catid={$cate['menu_id']}" <if condition="$cate['menu_id'] eq $cid">class="curr"</if>>{$cate.name}</a></li>
+        </foreach>
+      </ul>
+    </div>
+  </div>
+</header>

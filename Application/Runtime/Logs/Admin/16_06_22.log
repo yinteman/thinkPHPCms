@@ -1,0 +1,388 @@
+[ 2016-06-22T01:45:04+08:00 ] ::1 /project/index.php?m=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-06-22T01:45:07+08:00 ] ::1 /project/index.php?m=Admin&c=Position
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2016-06-22T01:45:11+08:00 ] ::1 /project/index.php?m=Admin&c=Positioncontent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionContentModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0065s ]
+NOTIC: [8] Undefined variable: condition E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 ORDER BY listorder desc,id  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: position_id E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2016-06-22T01:45:20+08:00 ] ::1 /project/index.php?m=Admin&c=Positioncontent&a=listorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0058s ]
+SQL: UPDATE `cms_position_content` SET `id`='39',`listorder`='12' WHERE `id` = 39 [ RunTime:0.0003s ]
+SQL: UPDATE `cms_position_content` SET `id`='38',`listorder`='4' WHERE `id` = 38 [ RunTime:0.0002s ]
+SQL: UPDATE `cms_position_content` SET `id`='40',`listorder`='1' WHERE `id` = 40 [ RunTime:0.0002s ]
+SQL: UPDATE `cms_position_content` SET `id`='41',`listorder`='0' WHERE `id` = 41 [ RunTime:0.0002s ]
+SQL: UPDATE `cms_position_content` SET `id`='42',`listorder`='0' WHERE `id` = 42 [ RunTime:0.0002s ]
+SQL: UPDATE `cms_position_content` SET `id`='43',`listorder`='0' WHERE `id` = 43 [ RunTime:0.0002s ]
+SQL: UPDATE `cms_position_content` SET `id`='44',`listorder`='0' WHERE `id` = 44 [ RunTime:0.0002s ]
+
+[ 2016-06-22T01:45:21+08:00 ] ::1 /project/index.php?m=Admin&c=Positioncontent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionContentModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0071s ]
+NOTIC: [8] Undefined variable: condition E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 ORDER BY listorder desc,id  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: position_id E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2016-06-22T01:45:28+08:00 ] ::1 /project/index.php?m=Admin&c=Positioncontent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionContentModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0066s ]
+NOTIC: [8] Undefined variable: condition E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 ORDER BY listorder desc,id  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: position_id E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-06-22T01:45:29+08:00 ] ::1 /project/index.php?m=Admin&c=Content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = -1 AND `type` = 0 ORDER BY listorder desc,menu_id  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 36 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0073s ]
+NOTIC: [8] Undefined index: catid E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 24 行.
+NOTIC: [8] Undefined index: catid E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id LIMIT 0,2   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: catid E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 37 行.
+NOTIC: [8] Undefined index: catid E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_menu` WHERE `menu_id` = 14 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cms_menu` WHERE `menu_id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-06-22T01:45:32+08:00 ] ::1 /project/index.php?m=Admin&c=Content&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = -1 AND `type` = 0 ORDER BY listorder desc,menu_id  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 36 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0058s ]
+NOTIC: [8] Undefined index: catid E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 24 行.
+NOTIC: [8] Undefined index: catid E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id LIMIT 2,2   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: catid E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 37 行.
+NOTIC: [8] Undefined index: catid E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 37 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_menu` WHERE `menu_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_menu` WHERE `menu_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2016-06-22T01:45:40+08:00 ] ::1 /project/index.php?m=Admin&c=Content&a=push
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('8')  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionContentModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0063s ]
+SQL: INSERT INTO `cms_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('2','尽快发jfk的司法考试看','/project//upload/2016/06/20/5767ddb037091.jpg','8','1','1466424770') [ RunTime:0.0003s ]
+
+[ 2016-06-22T01:45:42+08:00 ] ::1 /project/index.php?m=Admin&c=Positioncontent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionContentModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: condition E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 ORDER BY listorder desc,id  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: position_id E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2016-06-22T01:45:49+08:00 ] ::1 /project/index.php?m=Admin&c=Positioncontent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionContentModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0058s ]
+NOTIC: [8] Undefined variable: condition E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 ORDER BY listorder desc,id  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: position_id E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2016-06-22T01:45:51+08:00 ] ::1 /project/index.php?m=Admin&c=Positioncontent&a=listorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0070s ]
+SQL: UPDATE `cms_position_content` SET `id`='39',`listorder`='12' WHERE `id` = 39 [ RunTime:0.0004s ]
+SQL: UPDATE `cms_position_content` SET `id`='38',`listorder`='4' WHERE `id` = 38 [ RunTime:0.0004s ]
+SQL: UPDATE `cms_position_content` SET `id`='40',`listorder`='1' WHERE `id` = 40 [ RunTime:0.0006s ]
+SQL: UPDATE `cms_position_content` SET `id`='41',`listorder`='0' WHERE `id` = 41 [ RunTime:0.0003s ]
+SQL: UPDATE `cms_position_content` SET `id`='42',`listorder`='0' WHERE `id` = 42 [ RunTime:0.0003s ]
+SQL: UPDATE `cms_position_content` SET `id`='43',`listorder`='0' WHERE `id` = 43 [ RunTime:0.0003s ]
+SQL: UPDATE `cms_position_content` SET `id`='44',`listorder`='0' WHERE `id` = 44 [ RunTime:0.0003s ]
+SQL: UPDATE `cms_position_content` SET `id`='45',`listorder`='0' WHERE `id` = 45 [ RunTime:0.0002s ]
+
+[ 2016-06-22T01:45:52+08:00 ] ::1 /project/index.php?m=Admin&c=Positioncontent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) E:\Demo\project\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) E:\Demo\project\Application\Common\Model\PositionContentModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined variable: condition E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 ORDER BY listorder desc,id  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: position_id E:\Demo\project\Application\Admin\Controller\PositioncontentController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+

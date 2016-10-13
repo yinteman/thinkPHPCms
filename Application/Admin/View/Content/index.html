@@ -1,0 +1,154 @@
+<include file="Index/header" />
+<body>
+<div id="wrapper">
+
+<include file="Index/nav"/>
+  <div id="page-wrapper">
+
+    <div class="container-fluid" >
+
+      <!-- Page Heading -->
+      <div class="row">
+        <div class="col-lg-12">
+
+          <ol class="breadcrumb">
+            <li>
+              <i class="fa fa-dashboard"></i>  <a href="{:U('Content')}">文章管理</a>
+            </li>
+            <li class="active">
+              <i class="fa fa-table"></i>文章列表
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div >
+        <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
+      </div>
+      <div class="row">
+        <form action="{:U('index')}" method="get">
+          <div class="col-md-3">
+            <div class="input-group">
+              <span class="input-group-addon">栏目</span>
+              <select class="form-control" name="catid">
+                <option value='' >全部分类</option>
+                <foreach name="wibeName" item="name">
+                <option value="{$name.menu_id}" >{$name.name}</option>
+                </foreach>
+              </select>
+            </div>
+          </div>
+          <input type="hidden" name="c" value="Content"/>
+          <input type="hidden" name="a" value="index"/>
+          <div class="col-md-3">
+            <div class="input-group">
+              <input class="form-control" name="title" type="text" value="" placeholder="文章标题" />
+                <span class="input-group-btn">
+                  <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3></h3>
+          <div class="table-responsive">
+            <form id="singcms-listorder">
+              <table class="table table-bordered table-hover singcms-table">
+                <thead>
+                <tr>
+                   <th id="singcms-checkbox-all" width="10"><input type="checkbox"/> 
+                  <th width="14">排序</th>
+                  <th>id</th>
+                  <th>标题</th>
+                  <th>栏目</th>
+                  <th>来源</th>
+                  <th>封面图</th>
+                  <th>时间</th>
+                  <th>状态</th>
+                  <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                 <foreach name="rows" item="row">
+                  <tr>
+                   <td>
+                    <input type="checkbox" name="pushcheck" value="{$row.news_id}" /></td> 
+                    <td><input size=4 type='text'  name='{$row.news_id}' value="{$row.listorder}"/></td><!--6.7-->
+                    <td>{$row.news_id}</td>
+                    <td>{$row.title}</td>
+                    <td>{$row.catid|getCatName}</td>
+                    <td>{$row.copyfrom|getCopyName}</td>
+                    <td>
+                      {$row.thumb|isThumb}
+                    </td>
+                    <td>{$row.create_time|date="y-m-d",###}</td>
+                    <td><span  attr-status="{$row.status}"  attr-id="{$row.news_id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >
+                    {$row.status|getStatus}</span></td>
+                    <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="" 
+                    onclick="edit({$row['news_id']})"></span>
+                      <a href="javascript:void(0)" id="singcms-delete"  attr-id=""  attr-message="删除"  onclick="deleteMenu({$row['news_id']})">
+                        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                      </a>
+
+                    </td>
+
+                  </tr>
+                   </foreach>
+                
+
+                </tbody>
+                   
+              </table>
+              <button  class="btn btn-defalut" id="order"  type="button">排序</button>
+            </form>
+              <nav>
+
+              <ul >
+                   {$page}
+              </ul>
+
+            </nav>
+               
+
+          </div>
+           <div  class="input-group">
+              <select class="form-control" name="position_id" id="select_push">
+                  <option>--请选择--</option>
+                  <foreach name='positions' item='position'>
+                      <option value="{$position.id}">{$position.name}</option>
+                  </foreach>
+                      
+                  </select>
+                    
+
+             <button type="button" class="btn btn-default" id="singcms-push">推送</button>
+                </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+
+
+    </div>
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<script>
+  var SCOPE = {
+    'edit_url' : '{:U("edit")}',
+    'add_url' : '{:U("add")}',
+    'jump_url' : "{:U('index')}",
+   'listorder_url' : "{:U('listorder')}",
+    'sing_news_view_url' : '/index.php?c=view',
+   
+    'push_url' : '{:U("push")}',
+  }
+</script>
+<include file="Index/footer" />

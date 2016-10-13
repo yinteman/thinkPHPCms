@@ -1,0 +1,82 @@
+<include file="Index/header"/>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-9">
+        
+        <div class="news-list">
+        <foreach name="result['listNes']" item="new">
+          <dl>
+            <dt>{$new.title}</dt>
+            <dd class="news-img" >
+              <a href="/project/index.php?m=Home&c=Detail&id={$new['news_id']}" target="_blank"><img src="{$new.thumb}" alt="" width="170"></a>
+            </dd>
+            <dd class="news-intro">
+              {$new.small_title}
+            </dd>
+            <dd class="news-info">
+              {$new.username}<span>{$new.create_time|date="y-m-h",###}</span> 阅读({$new.count})
+            </dd>
+          </dl>
+         </foreach>
+           <ul id="biuuu_city_list"></ul>
+
+            <div id="biuuu_city"></div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-3">
+        <div class="right-title">
+          <h3>文章排行</h3>
+          <span>TOP ARTICLES</span>
+        </div>
+        <div class="right-content">
+          <ul>
+          <volist name="result['ranknews']" id="new" key="k">
+            <li class="num{$k}  curr">
+              <a href="/project/index.php?m=Home&c=Detail&id={$new['news_id']}" target="_blank">{$new.title}</a>
+              <if condition="$k eq 0">
+              <div class="intro">
+                {$news.small_title}
+              </div>
+              </if>
+            </li>
+            
+            </volist>
+          </ul>
+        </div>
+        <volist name="result['adList']" id="ads" key="k">
+        <div class="right-hot">
+          <a href="/project/index.php?m=Home&c=Detail&id={$ads['news_id']}"><img src="{$ad.thumb}" alt=""></a>
+        </div>
+        </volist>
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+</body>
+<script type="text/javascript">
+
+laypage({
+    cont: 'biuuu_city',
+    pages: {$listRows},
+    curr:  function(){ //通过url获取当前页，也可以同上（pages）方式获取
+        var page = location.search.match(/page=(\d+)/);
+        return page ? page[1] : 1;
+    }(), 
+    jump: function(e, first){ //触发分页后的回调
+
+        if(!first){ //一定要加此判断，否则初始时会无限刷新
+            var currs=e.curr;
+
+            location.href ="/project/index.php?m=Home&c=Cat&a=index&page="+currs;}}
+            
+})
+
+
+
+</script>
+
+
+</html>
